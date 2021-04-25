@@ -1,0 +1,60 @@
+//Sir/Ma I stand to be trained and to be corrected, I have a problem with my PC and my hard drive crashed,
+//I wasn't able to use android studio to do the assignment, because of all the steps in configuring it
+//I had to borrow a neigbours laptop and I installed Eclipse Java compiler to do the task.
+//Am very sorry for the inconviniency, but please bear with me as i get my PC fixed.
+
+
+//The program contains a main class and a function.
+
+
+public class HeyAha {
+
+	public static void main(String[] args) {
+
+			Test test = new Test();
+	}
+
+}
+
+
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+
+public class Test implements ActionListener{
+
+	
+	JFrame frame;
+	ImageIcon image1;
+	ImageIcon image2;
+	JButton buton;
+	JLabel label;
+	
+	
+	public Test() {
+		
+		JButton button = new JButton("Click Me");
+		button.setBounds(150,50,100,60);
+		button.addActionListener(this);
+		
+		
+		
+		frame = new JFrame("Button E.G");
+		frame.setSize(new Dimension(420,420));
+		frame.setLayout(null);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.add(button);
+		frame.setVisible(true);
+	}
+	
+	public void actionPerformed(ActionEvent e) {
+		
+		System.out.println("Hello World!");
+		System.out.println("You are welcome.");
+		
+		
+	}
+	
+}
